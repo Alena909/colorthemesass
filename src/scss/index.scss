@@ -1,0 +1,31 @@
+@use "sass:list";
+
+$color-white: white;
+$color-pink: rgb(206, 142, 203);
+$color-orchid: orchid;
+$color-mauve: rgb(126, 61, 124);
+$color-eggplant: rgb(35, 6, 34);
+$color-gradient: $color-white, $color-pink, $color-orchid, $color-mauve,
+  $color-eggplant;
+
+@mixin colors($bg) {
+  background-image: linear-gradient(to top left, $bg);
+}
+
+body {
+  height: 97vh;
+  overflow: hidden;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  @include colors($color-gradient);
+  border-bottom: $color-white;
+  color: $color-white;
+  font-size: 3em;
+  border: $color-white 7px solid;
+}
+.container {
+  padding: 2em;
+  border-radius: 50px;
+  border: 10px $color-white solid;
+}

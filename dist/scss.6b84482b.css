@@ -1,0 +1,20 @@
+body {
+  height: 97vh;
+  overflow: hidden;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-image: linear-gradient(to top left, white, rgb(206, 142, 203), orchid, rgb(126, 61, 124), rgb(35, 6, 34));
+  border-bottom: white;
+  color: white;
+  font-size: 3em;
+  border: white 7px solid;
+}
+
+.container {
+  padding: 2em;
+  border-radius: 50px;
+  border: 10px white solid;
+}
+
+/*# sourceMappingURL=/scss.6b84482b.css.map */
